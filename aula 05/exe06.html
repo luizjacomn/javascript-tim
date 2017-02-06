@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+        var dia = new Date();
+        var hora = dia.getHours();
+        var minutos = dia.getMinutes();
+
+        if(hora <= 12) {
+          document.write("Bom dia!");
+        } else if(hora > 12 & hora <= 18) {
+          document.write("Boa tarde!");
+        } else {
+          document.write("Boa noite!");
+        }
+        alert(hora + ":" + minutos);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

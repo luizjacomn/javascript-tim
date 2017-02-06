@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+        var banners = [];
+        banners[0] = "https://scontent.fjdo1-1.fna.fbcdn.net/v/t1.0-0/s200x200/15055858_837941009642986_2656501096106140708_n.jpg?oh=d4241e8f212821dca6d990c5c1d67948&oe=591A1517";
+        banners[1] = "https://scontent.fjdo1-1.fna.fbcdn.net/v/t31.0-8/15039681_837941012976319_7661072954772850557_o.jpg?oh=20c413f7a0f32ec1e6edcba121f65767&oe=59061F16";
+        banners[2] = "https://scontent.fjdo1-1.fna.fbcdn.net/v/t1.0-9/15055801_837941019642985_1418683012623563243_n.jpg?oh=cbf0788f5133989133b0205da80ba891&oe=590443D5";
+        banners[3] = "https://scontent.fjdo1-1.fna.fbcdn.net/v/l/t31.0-8/15025399_837941022976318_7951227673236197072_o.jpg?oh=483def73471f59bdf2985747870a64e9&oe=590D0C53";
+
+        var titulo = ["Vó Mazé", "Elyka & Jacó", "Jacob", "Equipe LAPIS"];
+
+        contador = 0;
+
+        function rotativo() {
+            document.images[0].src = banners[contador];
+            document.images[0].title = titulo[contador];
+
+            contador++;
+
+            if (contador == banners.length) {
+                contador = 0;
+            }
+
+            setTimeout("rotativo()", 3000);
+        }
+    </script>
+</head>
+
+<body onload="rotativo()">
+    <h1>Fotos</h1>
+    <img height="200px"/>
+
+    </div>
+</body>
+
+</html>

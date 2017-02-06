@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+        var vetor = [1, 2, 3, 4, 5, 9];
+        var i = 0;
+        while (i < vetor.length) {
+            document.write(vetor[i]);
+            i++;
+        }
+
+        function teste() {
+            i++;
+            document.write("<button onClick='teste()'>" + i + "</button>")
+        }
+    </script>
+</head>
+
+<body>
+    <button onClick="teste()">Interativo</button>
+</body>
+
+</html>

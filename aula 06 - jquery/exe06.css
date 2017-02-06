@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 10px;
+  color: #196b4d;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  background: #196b4d;
+  color: white;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+button:hover {
+  background: #12996c;
+}
+
+
+#resultados ul {
+  margin: 10px;
+}

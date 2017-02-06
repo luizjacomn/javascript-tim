@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+        var citacao = [];
+        citacao[0] = "Luiz Jacó Batista de Oliveira";
+        citacao[1] = "Antônio Rafael Monteiro Delfino";
+        citacao[2] = "Josimar do Nascimento Paz Junior (Rico)";
+        citacao[3] = "Alandson Mendonça Ribeiro Meireles";
+
+        contador = 0;
+
+        function exibeEquipe() {
+            document.getElementById("equipe").innerHTML = citacao[contador];
+            contador++
+
+            if (contador == citacao.length) {
+                contador = 0
+            }
+
+            setTimeout("exibeEquipe()", 1000);
+        }
+    </script>
+</head>
+
+<body onload="exibeEquipe()">
+    <h1>Equipe LAPIS</h1>
+    <div id="equipe">
+
+    </div>
+</body>
+
+</html>

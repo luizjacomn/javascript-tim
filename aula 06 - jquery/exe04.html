@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style type="text/css">
+      .quadrado, .original {
+        cursor: pointer;
+        background: #99cd1a;
+        border: 1px solid black;
+        border-radius: 10px;
+        float': left;
+        margin-left: 10px;
+        margin-top: 10px;
+        padding: 0;
+        width: 120px;
+        height: 120px;
+
+      }
+    </style>
+</head>
+
+<body>
+
+    <div class="quadrado"></div>
+    <div class="quadrado"></div>
+    <div class="quadrado"></div>
+    <div class="quadrado"></div>
+    <div id="cinco" class="quadrado"></div>
+    <div class="quadrado"></div>
+    <div class="quadrado"></div>
+    <div class="quadrado"></div>
+    <div class="quadrado"></div>
+
+</body>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('div.quadrado').mouseover(function() {
+            $(this).css({
+                'cursor': 'pointer',
+                'background': '#008000',
+                'padding': '10px',
+                'width': '100px',
+                'height': '100px'
+            }).add('p').html('Teste');
+        });
+
+        $('div.quadrado').mouseout(function() {
+            $(this).css({
+                'cursor': 'pointer',
+                'background': '#99cd1a',
+                'border': '1px solid black',
+                'border-radius': '10px',
+                'float': 'left',
+                'margin-left': '10px',
+                'margin-top': '10px',
+                'padding': '0',
+                'width': '120px',
+                'height': '120px'
+            }).add('').html('');
+        });
+    });
+</script>
+
+</html>

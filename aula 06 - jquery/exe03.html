@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+        #clique {
+            border: inset 2px black;
+            background-color: #cfc926;
+            width: 120px;
+            cursor: pointer;
+            text-align: center;
+            padding: 5px;
+            font-weight: bold;
+            color: black
+        }
+
+        #clique:hover {
+            border: outset 2px red;
+            color: red
+        }
+
+        img,
+        #moldura {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="clique">Show image</div>
+
+    <figure id="moldura">
+        <img src="https://www.sociquiz.xyz/media/-est-s-con-el-hombre-indicado/series-quiz-game-of-thrones.jpg" alt="Game of Thrones">
+    </figure>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#clique').click(function() {
+                $('img').fadeToggle('slow');
+                $('#moldura').slideToggle('slow');
+            });
+        });
+    </script>
+</body>
+
+</html>
